@@ -10,12 +10,12 @@ public class Main {
         System.out.println("+++++++++++++++++++++");
     }
 
-    public static void  printIssues(int issuesCount){
+    public static void printIssues(int issuesCount) {
         System.out.println(issuesCount);
     }
 
     public static int sum(int[] numbers) {
-        int sum=0;
+        int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
             sum = sum + numbers[i];
         }
@@ -49,15 +49,16 @@ public class Main {
         printSeparator();
         for (int i = 0; i < issuesByMounths.length; i++) {
             printIssues(issuesByMounths[i]);
-            if ((i+1)%3==0) {
+            if ((i + 1) % 3 == 0) {
                 printSeparator();
             }
         }
-printSeparator();
-        int total=sum(issuesByMounths);
+        printSeparator();
+        int total = sum(issuesByMounths);
         printIssues(total);
 
     }
+
     public static void task1() {
         System.out.println();
         System.out.println("Метод. Задание 1");
@@ -73,11 +74,11 @@ printSeparator();
     }
 
 
-
     public static void task2() {
         System.out.println();
         System.out.println("Метод. Задание 2");
     }
+
     public static void defineAppVersion(int mobileIOS, int mobileYear) {
         int currentYear = LocalDate.now().getYear();
         String mobileIOsName = defineIOsName(mobileIOS);
@@ -88,7 +89,7 @@ printSeparator();
             System.out.println("Для ОС " + mobileIOsName + " необходимо установить новую версию.");
 
         }
-        }
+    }
 
     public static String defineIOsName(int mobileIOS) {
         String mobileName;
@@ -106,6 +107,7 @@ printSeparator();
         }
         return mobileName;
     }
+
     public static void task3() {
         System.out.println();
         System.out.println("Метод. Задание 3");
@@ -127,14 +129,14 @@ printSeparator();
         int days = calcCardDeliveryDays(distance);
 
         if (days > 0) {
-            System.out.println("Потребуется дней: "+ days);
+            System.out.println("Потребуется дней: " + days);
 
         } else {
             System.out.println("Доставка не осуществляется.");
 
         }
     }
-        }
+}
 
 
 
